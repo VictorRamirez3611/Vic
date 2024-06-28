@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia De La Vía Láctea</title>
+    <style>
+        /* Estilo para el cuerpo de la página */
+        body {
+            background-image: url(que.png); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        /* Estilo para los párrafos */
+        p {
+            font-size: 20px;
+        }
+
+        /* Estilo para el encabezado */
+        header {
+            padding: 1rem;
+        }
+
+        /* Estilo para el título dentro del encabezado */
+        header h1 {
+            margin: 0;
+        }
+
+        /* Estilo para la navegación */
+        nav {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Estilo para la lista de navegación */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo para los elementos de la lista de navegación */
+        nav ul li {
+            display: inline;
+            margin: 0 1rem 0 0;
+        }
+
+        /* Estilo para los enlaces de navegación */
+        nav a {
+            color: rgb(183, 27, 13);
+            text-decoration: none;
+        }
+
+        /* Cambio de color al pasar el ratón sobre los enlaces de navegación */
+        nav a:hover {
+            color: #9E9E9E;
+        }
+
+        /* Estilo para el contenido principal */
+        main {
+            padding: 2rem;
+        }
+
+        /* Estilo para los encabezados de primer nivel */
+        h1 {
+            color: #253f8d;
+        }
+
+        /* Estilo para los encabezados de segundo nivel */
+        h2 {
+            margin-top: 2rem;
+            color: blueviolet;
+        }
+
+        /* Estilo para los encabezados de tercer nivel */
+        h3 {
+            margin: 1rem 0 0.5rem 0;
+        }
+
+        /* Estilo para los párrafos */
+        p {
+            margin-bottom: 1rem;
+            color: rgb(0, 0, 0);
+        }
+
+        /* Estilo para las imágenes */
+        img {
+            max-width: 100%; 
+            max-height: 100%; 
+            display: block;
+            transition: transform 0.3s ease; /* Efecto de transición */
+        }
+
+        /* Efecto de zoom al pasar el ratón sobre la imagen */
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Estilo para el botón */
+        .btn {
+            padding: 1rem 2rem;
+            font-weight: 700;
+            background: rgb(132, 221, 241);
+            color: rgb(115, 42, 240);
+            border-radius: .5rem;
+            border-bottom: 2px solid blueviolet;
+            border-right: 2px solid blueviolet;
+            border-top: 2px solid rgb(132, 221, 241);
+            border-left: 2px solid rgb(132, 221, 241);
+            transition-duration: 1s;
+            transition-property: border-top, border-left, border-bottom, border-right, box-shadow;
+        }
+
+        /* Efecto al pasar el ratón sobre el botón */
+        .btn:hover {
+            border-top: 2px solid blueviolet;
+            border-left: 2px solid blueviolet;
+            border-bottom: 2px solid rgb(238, 103, 238);
+            border-right: 2px solid rgb(238, 103, 238);
+            box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
+        }
+
+        /* Estilo para el modal */
+        .modal {
+            display: none; /* Oculto por defecto */
+            position: fixed; /* Fijo en la pantalla */
+            z-index: 1; /* Se muestra por encima de otros elementos */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto; /* Habilita el desplazamiento si es necesario */
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con opacidad */
+        }
+
+        /* Contenido del modal */
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        /* Botón para cerrar el modal */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Botón para regresar a la página anterior -->
+    <main>
+        <button class="btn" onclick="goBack()">Regresar</button>
+
+        <!-- Script de JavaScript para la función de regresar -->
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script> 
+
+        <!-- Encabezado de la página -->
+        <center>
+            <h1>Historia de la Vía Láctea</h1>
+        </center>
+
+        <!-- Contenido del artículo -->
+        <p>
+            La Vía Láctea, también conocida como "Camino de Leche", se revela como un fascinante cosmos estelar que acoge en su seno a nuestro propio sistema solar. Con una estructura de espiral barrada, este inmenso sistema cósmico alberga una asombrosa diversidad de elementos, desde estrellas resplandecientes hasta vastas nubes de gas y polvo cósmico.
+            <br><br>
+            Extendiendo sus brazos espirales a través del espacio, la Vía Láctea despliega un escenario poblado por miles de millones de estrellas. Dentro de sus confines, se encuentran enclaves cósmicos como nebulosas deslumbrantes y cúmulos estelares, tejiendo una narrativa celestial que captura la imaginación de astrónomos y amantes del espacio.
+            Ubicados en uno de los brazos exteriores de esta espiral cósmica, nosotros, los habitantes de la Tierra, disfrutamos de la privilegiada perspectiva de explorar y estudiar las maravillas de nuestra galaxia. Esta posición única ofrece una ventana cósmica que nos permite maravillarnos ante la vastedad del universo y comprender nuestra conexión intrínseca con el cosmos que se despliega a nuestro alrededor.
+            <br><br>
+            El Universo de hace unos 13.000 millones de años era muy distinto al que hoy día conocemos.
+            <br>
+            Las estrellas se formaban a un ritmo vertiginoso, creando las primeras galaxias enanas, cuya fusión daría lugar a las galaxias más masivas actuales, incluyendo la nuestra. Sin embargo, la cadena exacta de acontecimientos que modeló la Vía Láctea era un misterio, hasta ahora.
+        </p>
+        <center>
+            <img src="C:\Users\victo\OneDrive\Documentos\proyectos\web\tienda imaginaria\img\lactea.jpg" alt="Vía Láctea" width="700" height="300">
+            <h5>Vía Láctea</h5>
+        </center>
+        <p>
+            La historia de la Vía Láctea es tan vasta como el universo mismo; es un inmenso sistema de estrellas, planetas, gas interestelar y polvo cósmico que se extiende a lo largo de cientos de miles de años luz. Se cree que se formó hace unos 13.500 millones de años, poco después del Big Bang, el evento que dio origen al universo tal como lo conocemos.
+            Durante millones de años, la Vía Láctea ha sido el hogar de innumerables estrellas y sistemas solares, así como de misteriosas y fascinantes estructuras como cúmulos estelares, nebulosas y agujeros negros. Nuestro sistema solar, junto con la Tierra, se encuentra en uno de los brazos espirales de la galaxia, conocido como el Brazo de Orión o el Brazo de Sagitario.
+            A lo largo de la historia, las civilizaciones han observado la Vía Láctea en el cielo nocturno y han tejido mitos y leyendas en torno a ella.
+            <br><br>
+            Para algunas culturas antiguas, como los griegos, era vista como el sendero de leche dejado por la diosa Hera mientras amamantaba al niño Hércules. En tiempos más modernos, la astronomía ha revelado mucho sobre la estructura y la composición de la Vía Láctea.
+            A través de observaciones con telescopios terrestres y espaciales, los científicos han podido mapear la distribución de estrellas y gas, así como estudiar la dinámica de la galaxia.
+            <br><br>
+            Se ha descubierto que ésta es solo una de las muchas galaxias en el universo, y que está en constante movimiento, interactuando gravitacionalmente con otras galaxias cercanas, como Andrómeda.
+            La historia de la Vía Láctea es la historia del universo mismo, desde su nacimiento hasta su evolución a lo largo de miles de millones de años. Es un recordatorio de nuestra posición humilde pero privilegiada en el vasto cosmos.
+            <br><br>
+            Uno de los hitos más significativos en la exploración de la Vía Láctea fue el desarrollo de la astronomía moderna a lo largo de los siglos XVI y XVII, cuando científicos como Galileo Galilei y Johannes Kepler utilizaron telescopios para estudiar las estrellas y los planetas con mayor detalle. Sus observaciones sentaron las bases para una comprensión más precisa de la estructura del universo.
+            En el siglo XX, el advenimiento de la astronomía de radio y la observación en diferentes longitudes de onda del espectro electromagnético permitió a los científicos detectar y estudiar objetos celestes que son invisibles a simple vista, como nubes de gas y polvo, así como agujeros negros supermasivos en el centro de la galaxia.
+            En la actualidad, los telescopios espaciales como el Telescopio Espacial Hubble y misiones como el Observatorio de Dinámica Galáctica de la NASA continúan proporcionando nuevas perspectivas sobre la Vía Láctea y su evolución.
+            <br><br>
+            También se están realizando esfuerzos para mapear la galaxia en tres dimensiones con mayor precisión, con proyectos como el Gaia Mission de la Agencia Espacial Europea, que está cartografiando miles de millones de estrellas en nuestra galaxia. Además, la investigación de exoplanetas, planetas que orbitan estrellas fuera de nuestro sistema solar, también está brindando información sobre la diversidad de sistemas planetarios en la Vía Láctea y más allá.
+            La historia continua de la Vía Láctea es un viaje de descubrimiento y exploración, impulsado por la curiosidad del ser humano y su búsqueda por comprender su lugar en el universo; se entrelaza con los avances científicos y tecnológicos que nos han permitido comprenderla mejor. A medida que la astronomía ha progresado, se han podido desarrollar herramientas más sofisticadas para estudiar la galaxia y el universo en su conjunto.
+        </p>
+        <center>
+        <h1>Formación</h1>
+        </center>
+<p>La Vía Láctea comenzó como una o varias pequeñas regiones de sobredensidad en la distribución másica del universo poco después del Big Bang. Algunas de estas regiones eran las semillas de los cúmulos globulares, en los que perduran las más antiguas estrellas que formaron la galaxia. Estas estrellas y cúmulos constituyen en la actualidad el halo estelar de la Vía Láctea. Tras unos pocos miles de millones de años después de las primeras estrellas, la masa de la galaxia era lo suficientemente grande como para que diera vueltas con relativa rapidez, lo que, debido a la conservación del momento angular, condujo a que el medio gaseoso interestelar colapsase de una forma más o menos esférica a un disco plano. Por lo tanto, las siguientes generaciones de estrellas se formaron en este disco espiral. La mayoría de las estrellas jóvenes, incluido el Sol, se encuentran en este disco.
+<br>
+<br>
+Desde el momento en que comenzaron a formarse las primeras estrellas, la Vía Láctea ha crecido mediante fusiones de galaxias (sobre todo al principio) y la acreción de gas del halo galáctico.25​ La Vía Láctea está en la actualidad aumentando su masa con sus dos más cercanas galaxias satélites, la Gran Nube de Magallanes y la Pequeña Nube de Magallanes, mediante la corriente de Magallanes. La acreción directa de gas se constata en nubes de alta velocidad como la nube de Smith.26​27​ Sin embargo, las propiedades de la Vía Láctea, como la masa estelar, el momento angular y la metalicidad de sus regiones más externas, sugieren que no ha sufrido fusiones con grandes galaxias en los últimos mil millones de años. Esta ausencia de grandes fusiones recientes es inusual entre galaxias espirales similares; su vecina, la galaxia de Andrómeda, parece tener una historia más típica con fusiones más recientes con galaxias relativamente grandes.
+<br>
+<br>
+Según recientes estudios, la Vía Láctea, así como Andrómeda, se encuentran en lo que se conoce como valle verde dentro del diagrama color-magnitud, una región poblada por galaxias en transición de la nube azul (galaxias con formación activa de nuevas estrellas) a la secuencia roja (galaxias que carecen de formación estelar). La formación de estrellas en las galaxias del valle verde va desacelerando a medida que se quedan sin gas en el medio interestelar. En simulaciones galácticas con propiedades semejantes, esta formación habrá desaparecido en unos cinco mil millones de años, incluso teniendo en cuenta el incremento a corto plazo en la tasa de formación por la colisión entre la Vía Láctea y Andrómeda.30​ De hecho, las medidas en otras galaxias similares a la Vía Láctea sugieren que esta está entre las galaxias espirales más rojas y brillantes que todavía forman nuevas estrellas y que es solo ligeramente más azul que las galaxias más azules de la secuencia roja.</p>
+        <center>
+            <img src="AAAaaa.jpg" alt="Vía Láctea en la actualidad" width="700" height="300">
+            <h5>La Vía Láctea en la actualidad</h5>
+        </center>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Función para mostrar el modal
+        function showModal(title, description) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-description').innerText = description;
+            document.getElementById('myModal').style.display = 'block';
+        }
+
+        // Función para cerrar el modal
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+
+        // Restaurar hipervínculos y asociarlos con el modal
+        document.addEventListener("DOMContentLoaded", function() {
+            var links = document.querySelectorAll("nav a");
+            links.forEach(function(link) {
+                link.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    var title = event.target.textContent;
+                    var description = "Descripción para " + title; // Aquí puedes personalizar las descripciones
+                    showModal(title, description);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vía Láctea</title>
+    <style>
+        body {
+            background-image: url(que.png); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            font-size: 20px;
+        }
+
+        header {
+            padding: 1rem;
+        } 
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 1rem 0 0;
+        }
+
+        nav a {
+            color: rgb(183, 27, 13);
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #9E9E9E;
+        }
+
+        main {
+            padding: 2rem;
+        }
+        h1 {
+            color: #253f8d;
+        }
+
+        h2 {
+            margin-top: 2rem;
+        }
+
+        h2 {
+            color: blueviolet;
+        }   
+
+        h3 {
+            margin: 1rem 0 0.5rem 0;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        img {
+            max-width: 100%; 
+            max-height: 100%; 
+            display: block;
+            transition: transform 0.3s ease; /* Efecto de transición */
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        p { 
+            color: rgb(0, 0, 0);
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            font-weight: 700;
+            background: rgb(132, 221, 241);
+            color: rgb(115, 42, 240);
+            border-radius: .5rem;
+            border-bottom: 2px solid blueviolet;
+            border-right: 2px solid blueviolet;
+            border-top: 2px solid rgb(132, 221, 241);
+            border-left: 2px solid rgb(132, 221, 241);
+            transition-duration: 1s;
+            transition-property: border-top, 
+                border-left, 
+                border-bottom,
+                border-right,
+                box-shadow;
+        }
+
+        .btn:hover {
+            border-top: 2px solid blueviolet;
+            border-left: 2px solid blueviolet;
+            border-bottom: 2px solid rgb(238, 103, 238);
+            border-right: 2px solid rgb(238, 103, 238);
+            box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
+        }
+
+        /* Estilo para el modal */
+        .modal {
+            display: none; /* Oculto por defecto */
+            position: fixed; /* Fijo en la pantalla */
+            z-index: 1; /* Se muestra por encima de otros elementos */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto; /* Habilita el desplazamiento si es necesario */
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con opacidad */
+        }
+
+        /* Contenido del modal */
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        /* Botón para cerrar el modal */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <button class="btn" onclick="goBack()">Regresar</button>
+
+        <script>
+          function goBack() {
+            window.history.back();
+          }
+        </script> 
+        <center>
+        <h1>Estructura y componentes</h1>
+        </center>
+            <p>Se piensa que la Vía Láctea es una de las galaxias más antiguas del universo conocido, dado que en muchos de sus cúmulos globulares se encuentran algunas de las estrellas más antiguas que se conocen. La formación de la galaxia tuvo lugar hace alrededor de 12 o 13 mil millones de años, una edad muy próxima a la estimada para el cosmos entero, y tuvo su inicio en el material de los cúmulos globulares que componen el halo estelar.
+                Sin embargo, la Vía Láctea ganó una mayor complejidad y densidad a través de su encuentro con otras galaxias menores, que acabaron fusionadas con ella. De hecho, en la actualidad la galaxia está devorando parcialmente la masa de otras galaxias satélites, como la Gran Nube de Magallanes y la Pequeña Nube de Magallanes.
+                Consiste en una gigantesca agrupación de estrellas, planetas y nubes de gas con forma de espiral barrada y un diámetro medio de alrededor de 200.000 años luz.<br>
+                Es posible percibir la Vía Láctea a simple vista en una noche despejada, como una luz blanca borrosa que se extiende alrededor de la esfera celeste.
+                Esto se debe a que el sistema solar se encuentra en una región apartada del centro, aproximadamente a 25.766 años luz, en uno de los brazos de la espiral; al Sol le toma 225 millones de años terrestres completar una vuelta alrededor del centro galáctico.
+                <br><br>
+                Además, la Vía Láctea presenta un halo extendido que rodea su disco, compuesto principalmente por estrellas más antiguas y materia oscura. Esta sustancia enigmática, invisible pero detectada por sus efectos gravitacionales, contribuye significativamente a la masa total de la galaxia.
+                Nuestro sistema solar reside en uno de los brazos exteriores de esta espiral, en las afueras de la Vía Láctea. Esta posición nos brinda una perspectiva única para estudiar y comprender la intrincada estructura y la rica diversidad de componentes que componen esta vasta galaxia.
+                Está conformada por entre 100 y 400 mil millones de estrellas, la más antigua tiene alrededor de 13 mil millones de años de edad, apenas 600 mil años más joven que el resto de la galaxia.</p>
+           <center>
+                    <br>
+                    <img src="vialactea.png" alt="Estructura de la Vía Láctea" width="700" height="300">
+                    <br>
+           </center>
+                <p>Medidas precisas de posición, brillo y distancia para aproximadamente un millón de estrellas de nuestra Galaxia en un radio de 6.500 años luz alrededor del Sol, aportadas por el telescopio espacial Gaia, han permitido a un equipo del IAC vislumbrar sus etapas iniciales.
+                <br><br> Estudios anteriores habían descubierto que el halo galáctico presentaba muestras inequívocas de estar formado por dos componentes estelares distintas, una dominada por estrellas más azules que la otra. 
+                La forma de moverse de las estrellas de la componente azul pronto permitió identificarla como los restos de una galaxia enana (Gaia-Encélado) que impactó con una primigenia Vía Láctea. En su centro habita un agujero negro súper masivo conocido como Sagitario A, cuya masa equivale a 4 millones de veces la del Sol y que fue observado directamente por primera vez en 2022.
+                Sin embargo, la naturaleza de la población roja y el momento de la fusión entre Gaia-Encélado y nuestra galaxia no se habían desvelado hasta ahora.
+                </p>
+                <center>
+                    <img src="vialactea.gif" width="800" height="400">
+                    <h5>La Vía Láctea con el paso del tiempo</h5>
+                </center>
+                <p>
+                La Vía Láctea forma parte del Grupo Local, un conjunto de alrededor de 40 galaxias distintas, entre las cuales existen tres destacables por su gran brillo y gran tamaño:
+                
+                <br><br>La galaxia de Andrómeda.<br>
+                La Vía Láctea.<br>
+                La galaxia del Triángulo.<br><br>
+
+            El resto son galaxias satélite que orbitan alrededor de manera más o menos libre, y conforman tres sistemas galácticos claramente diferenciables. El Grupo Local tiene un diámetro de unos 10 millones de años luz y una masa estimada total de 2,3 a 0,6 x 1012 veces la del Sol.
+            El Grupo Local, a su vez, forma parte de un supercúmulo de Laniakea (del haiwaiano “cielos inconmensurables”), donde se encuentran alrededor de 100.000 galaxias cercanas. Antiguamente se consideraba que formaba parte del supercúmulo de Virgo, pero este último se entiende hoy como un pequeño lóbulo de Laniakea.
+            </p>
+            <center>
+                    <img src="img.jpg" alt="Vía Láctea" width="700" height="300">
+            </center>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Función para mostrar el modal
+        function showModal(title, description) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-description').innerText = description;
+            document.getElementById('myModal').style.display = 'block';
+        }
+
+        // Función para cerrar el modal
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+
+        // Restaurar hipervínculos y asociarlos con el modal
+        document.addEventListener("DOMContentLoaded", function() {
+            var links = document.querySelectorAll("nav a");
+            links.forEach(function(link) {
+                link.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    var title = event.target.textContent;
+                    var description = "Descripción para " + title; // Aquí puedes personalizar las descripciones
+                    showModal(title, description);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
